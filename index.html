@@ -23,22 +23,26 @@
 	<main>
 		<p></p>
 
-		<div id="dados">
+		<div class="coluna">
+		<li id="1">
 		<img src="/assets/seta.png" alt="seta">
-		<div>
+		<div id="texto">
 		<h3>Insira seus dados</h3>
+		<label for="altura">Digite sua altura</label>
 		<input type="text" id="altura"/>
+		<label for="peso">Digite seu peso</label>	
 		<input type="text" id="peso" />
+		<p></p>
 		<button onclick="calcular()">Calcular</button>
 		</div>
+		</li>
+
+		<li id="2">
+		<img src="/assets/ficha.png" alt="ficha">
+		<h3 id="resultado">Resultado</h3>
+		</li>
 		</div>
 
-		<div id="resultado">
-		<img src="/assets/ficha.png" alt="ficha">
-		<div>
-		<p id="resultado">Resultado</p>
-		</div>
-		</div>
 	</main>
 
 	

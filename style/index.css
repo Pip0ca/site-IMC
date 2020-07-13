@@ -28,27 +28,49 @@ header p {
 }
 
 main{
-    display: flex;
+
 
 }
- main #dados{
+
+
+ main #dados #texto{
     display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
  }
 
- main #dados img{
-    width: 50px;
-    height: 50px;
+ main input{
+     background-color: #f0f0f5;
+    /*cor dentro do input*/
+     border: 0;
+    /*tira a borda do input*/
+     padding: 5px 5px;
+     /*aumenta a caixa do input*/
+     font-size: 16px;
+     /*aumenta o texto dentro do input*/
+
+     outline:none;
+     /*efeito visual*/
  }
 
  main #resultado{
-    display: flex;
+    
  }
 
- main #resultado img{
-    width: 60px;
-    height: 60px;
- }
+.coluna{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
 
-#resultado{
+.coluna li{
+    list-style: none;
+}
+
+.coluna li img{
+    width: 50px;
+    height: 50px;
+}
+#resultado {
     transition: border-radius 0.5s;
 }
