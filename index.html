@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="/style/index.css">
+	
     <title>Calculadora IMC</title>
 </head>
+
+<div id="page-home">
 <body>
+	
 	<header>
+		<img src="/assets/balança.png" alt="balança">
+		<div>
 		<h1> Calculadora IMC </h1>
+		<p>Avaliador do peso ideal para sua saúde</p>
+		<p></p>
+		</div>
 	</header>
+	
 	<main>
+		<p></p>
+
+		<div id="dados">
+		<img src="/assets/seta.png" alt="seta">
+		<div>
+		<h3>Insira seus dados</h3>
 		<input type="text" id="altura"/>
 		<input type="text" id="peso" />
 		<button onclick="calcular()">Calcular</button>
+		</div>
+		</div>
+
+		<div id="resultado">
+		<img src="/assets/ficha.png" alt="ficha">
+		<div>
 		<p id="resultado">Resultado</p>
+		</div>
+		</div>
 	</main>
+
+	
 	<script src="main.js"></script>
+</div>
 </body>
 </html>

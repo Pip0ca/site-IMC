@@ -1,0 +1,54 @@
+#page-home{
+height: 120vh;
+background-color: #5fcfaf;
+height: 35vw bottom ;
+
+}
+
+header {
+    display: flex;
+    border: #f0f2f2;
+    background-color: #f0f2f2;
+}
+
+header img{
+    width: 130px;
+    height: 130px;
+}
+
+header h1 {
+    color: black;
+    font-weight: 700;   
+}
+
+header p {
+    color: #398f76;
+    font-weight: 400;
+    font-style: italic;
+}
+
+main{
+    display: flex;
+
+}
+ main #dados{
+    display: flex;
+ }
+
+ main #dados img{
+    width: 50px;
+    height: 50px;
+ }
+
+ main #resultado{
+    display: flex;
+ }
+
+ main #resultado img{
+    width: 60px;
+    height: 60px;
+ }
+
+#resultado{
+    transition: border-radius 0.5s;
+}
