@@ -1,75 +1,194 @@
-#page-home{
-height: 120vh;
-background-color: #5fcfaf;
-height: 35vw bottom ;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+/*ajuste da borda do site inteiro*/
 }
+
+#page-home {
+  height: 100vh;
+  background-color: #5fcfaf;
+  height: 35vw bottom;
+/*ajuste do bloco inteiro */
+}
+
+/*.cabeçalho {
+  display: flex;
+}*/
+
+.cabeçalho img {
+  width: 130px;
+  height: 130px;
+  /*ajuste balança*/
+}
+
+.cabeçalho div {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+  /*ajuste da escrita do cabeçalho*/
+}
+
+.cabeçalho div p {
+  margin-top: 10px;
+  /*ajuste da posição do slogan que esta no cabeçalho*/
+}
+
+.conteudo {
+  padding: 50px;
+  /*centraliza o texto que estava no canto esquerdo*/
+}
+
+.coluna {
+  display: flex;
+  /*coloca insira seus dados e resultados em colunas*/
+}
+
+/*.coluna li img {
+  width: 50px;
+  height: 50px;
+}*/
+
+.um {
+  margin-right: 250px;
+  /*distanciamento das duas colunas*/
+}
+
+.um .titulo {
+  /*ajuste da imagem com o titulo das colunas*/
+  display: flex;
+  /*coloca a imagem do lado do titulo*/
+  margin-bottom: 50px;
+  /*ajuste da distancia do textin */
+}
+
+.um .titulo img {
+  /*ajuste imagem*/
+  height: 50px;
+  /*ajuste horizontal*/
+  margin-right: 25px;
+  /*distancia entre titulo e imagem*/
+  width: 50px;
+  /*ajuste vertical*/
+}
+
+.um .titulo h3 {
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.um button {
+  background-color: #398f76;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 25px;
+  transition: filter 0.5s;
+}
+
+.um button:hover {
+  filter: brightness(0.7);
+}
+
+.formulario {
+  display: grid;
+}
+
+.formulario label:nth-child(3) {
+  margin-top: 25px;
+}
+
+<<<<<<< HEAD
+=======
+.formulario input:nth-child(4) {
+  margin-top: 5px;
+}
+
+.formulario input:nth-child(2) {
+  margin-top: 5px;
+}
+
+.dois {
+  display: flex;
+>>>>>>> 9f13f0debbcdab65c8a1918d9c9e1ca9af96505c
+}
+
+.dois img {
+  height: 50px;
+  margin-right: 25px;
+  width: 50px;
+}
+
+.dois h3 {
+  margin-top: 15px;
+}
+
+/* Eu não olhei muito daqui pra baixo, preferi criar o stylesheet e você olha as diferenças pra ver.
+ * Se serve de dica prefira utilizar 'classes' ao inves de 'ids' pra caso de precisar repetir o nome.
+ */
 
 header {
-    display: flex;
-    border: #f0f2f2;
-    background-color: #f0f2f2;
+  display: flex;
+  border: #f0f2f2;
+  background-color: #f0f2f2;
 }
 
-header img{
-    width: 130px;
-    height: 130px;
+header img {
+  width: 130px;
+  height: 130px;
 }
 
 header h1 {
-    color: black;
-    font-weight: 700;   
+  color: black;
+  font-weight: 700;
 }
 
 header p {
-    color: #398f76;
-    font-weight: 400;
-    font-style: italic;
+  color: #398f76;
+  font-weight: 400;
+  font-style: italic;
 }
 
-main{
-
+main #dados #texto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
+main input {
+  background-color: #f0f0f5;
+  /*cor dentro do input*/
+  border: 0;
+  /*tira a borda do input*/
+  padding: 5px 5px;
+  /*aumenta a caixa do input*/
+  font-size: 16px;
+  /*aumenta o texto dentro do input*/
 
- main #dados #texto{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
- }
-
- main input{
-     background-color: #f0f0f5;
-    /*cor dentro do input*/
-     border: 0;
-    /*tira a borda do input*/
-     padding: 5px 5px;
-     /*aumenta a caixa do input*/
-     font-size: 16px;
-     /*aumenta o texto dentro do input*/
-
-     outline:none;
-     /*efeito visual*/
- }
-
- main #resultado{
-    
- }
-
-.coluna{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+  outline: none;
+  /*efeito visual*/
+}
+/*
+.coluna {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
-.coluna li{
-    list-style: none;
+.coluna li {
+  list-style: none;
 }
 
-.coluna li img{
-    width: 50px;
-    height: 50px;
+.coluna li img {
+  width: 50px;
+  height: 50px;
 }
+
+*/
+
 #resultado {
-    transition: border-radius 0.5s;
+  transition: border-radius 0.5s;
 }

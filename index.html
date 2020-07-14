@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/style/index.css">
-	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/index.css" />
+
     <title>Calculadora IMC</title>
-</head>
+  </head>
 
-<div id="page-home">
-<body>
-	
-	<header>
-		<img src="/assets/balança.png" alt="balança">
-		<div>
-		<h1> Calculadora IMC </h1>
-		<p>Avaliador do peso ideal para sua saúde</p>
-		<p></p>
-		</div>
-	</header>
-	
-	<main>
-		<p></p>
+  <body>
+    <div id="page-home">
+      <header class="cabeçalho">
+        <img src="/assets/balança.png" alt="balança" />
+        <div>
+          <h1>Calculadora IMC</h1>
+          <p>Avaliador do peso ideal para sua saúde</p>
+          <!-- <p></p> -->
+        </div>
+      </header>
 
-		<div class="coluna">
-		<li id="1">
-		<img src="/assets/seta.png" alt="seta">
-		<div id="texto">
-		<h3>Insira seus dados</h3>
-		<label for="altura">Digite sua altura</label>
-		<input type="text" id="altura"/>
-		<label for="peso">Digite seu peso</label>	
-		<input type="text" id="peso" />
-		<p></p>
-		<button onclick="calcular()">Calcular</button>
-		</div>
-		</li>
+      <main class="conteudo">
+        <p></p>
 
-		<li id="2">
-		<img src="/assets/ficha.png" alt="ficha">
-		<h3 id="resultado">Resultado</h3>
-		</li>
-		</div>
+        <!-- Alterei o formato que você desenhou os elementos para deixar mais facil o entendimento ("semanticamente") e mais 'organizavel'-->
 
-	</main>
+        <div class="coluna">
+          <div class="um">
+            <section class="titulo">
+              <img src="/assets/seta.png" alt="seta" />
+              <h3>Insira seus dados</h3>
+			</section>
+			<!-- caixa de titulo-->
+            <form class="formulario">
+              <label for="altura">Digite sua altura</label>
+              <input type="text" id="altura" />
+              <label for="peso">Digite seu peso</label>
+              <input type="text" id="peso" />
+            </form>
+            <button onclick="calcular()">Calcular</button>
+          </div>
+          <!--<li id="1">
+            <img src="/assets/seta.png" alt="seta" />
+            <div id="texto">
+              <h3>Insira seus dados</h3>
+              <label for="altura">Digite sua altura</label>
+              <input type="text" id="altura" />
+              <label for="peso">Digite seu peso</label>
+              <input type="text" id="peso" />
+              <p></p>
+              <button onclick="calcular()">Calcular</button>
+            </div>
+		  </li> -->
 
-	
-	<script src="main.js"></script>
-</div>
-</body>
+          <div class="dois">
+            <img src="/assets/ficha.png" alt="ficha" />
+            <h3 id="resultado">Resultado</h3>
+          </div>
+
+          <!-- <li id="2">
+            <img src="/assets/ficha.png" alt="ficha" />
+            <h3 id="resultado">Resultado</h3>
+		  </li> -->
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
