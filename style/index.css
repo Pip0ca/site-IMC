@@ -56,6 +56,27 @@
   /*centraliza o texto que estava no canto esquerdo*/
 }
 
+.conteudo h4{
+  height: 70px;  
+  /*ajuste da posição do texto*/
+  font-weight: 500;
+  /*negrito da fonte*/
+}
+
+.conteudo input {
+  background-color: #f0f0f5;
+  /*cor dentro do input*/
+  border: 0;
+  /*tira a borda do input*/
+  padding: 5px 5px;
+  /*aumenta a caixa do input*/
+  font-size: 16px;
+  /*aumenta o texto dentro do input*/
+
+  outline: none;
+  /*efeito visual*/
+}
+
 .coluna {
   display: flex;
   /*coloca insira seus dados e resultados em colunas*/
