@@ -161,7 +161,7 @@
   /*espaçamento entre as areas para serem preenchidas (entre o campo de escreve e digite sua altura)*/
 }
 
-.dois {
+.dois .titulo{
   display: flex;
   /*coloca o titulo do lado da imagem*/
 }
@@ -181,6 +181,17 @@
  * Se serve de dica prefira utilizar 'classes' ao inves de 'ids' pra caso de precisar repetir o nome.
  */
 
+ .resposta{
+   display: grid;
+ }
+
 #resultado {
   transition: border-radius 0.5s;
+}
+
+.dois .resposta h4{
+  margin-top: 15px;
+  /*ajuste vertical */
+  font-weight: 800;
+  /*negrito da fonte*/
 }
