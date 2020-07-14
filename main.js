@@ -47,7 +47,3 @@ function aplicaEstiloRE(componente) {
   componente.style.width = "100px";
   componente.style.height ="40px";
 }
-
-function aplicaEstiloAN(componente){
-  
-}
