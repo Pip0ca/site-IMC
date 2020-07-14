@@ -15,6 +15,16 @@
   display: flex;
 }*/
 
+.cabeçalho {
+  /* chamar ou por header ou cabeçalho funciona
+  retangulo cabeçalho*/
+  display: flex;
+  /*ajusta imagem e texto no cabeçalho para ficar um do lado do outro*/
+  border: #f0f2f2;
+  background-color: #f0f2f2;
+  /*cor do cabebeçalho*/
+}
+
 .cabeçalho img {
   width: 130px;
   height: 130px;
@@ -31,6 +41,14 @@
 .cabeçalho div p {
   margin-top: 10px;
   /*ajuste da posição do slogan que esta no cabeçalho*/
+  color: #398f76;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cabeçalho div h1{
+  color: black;
+  font-weight: 700;
 }
 
 .conteudo {
@@ -75,45 +93,57 @@
   align-items: center;
   justify-content: center;
   margin: auto 0;
+  /*ajuste do titulo*/
 }
 
 .um button {
+  /*ajuste botão calular*/
   background-color: #398f76;
   border: none;
+  /*borda preta*/
   border-radius: 10px;
+  /*deixar sem ponta a borda*/
   color: #fff;
+  /*cor do botão*/
   cursor: pointer;
   font-weight: 700;
+  /*negrito*/
   margin-top: 25px;
   padding: 10px 25px;
+  /*grossura do botão*/
   transition: filter 0.5s;
+  /*efeito ao colocar o mouse em cima*/
 }
 
 .um button:hover {
   filter: brightness(0.7);
+  /*efeito cor mudando ao colocar o mouse em cima*/
 }
 
 .formulario {
   display: grid;
+  /*colocar digite sua altura e digite seu peso um em baixo do outro*/
 }
 
 .formulario label:nth-child(3) {
   margin-top: 25px;
+  /*espaçamento entre as areas para serem preenchidas ( entre campos)*/
 }
 
-<<<<<<< HEAD
-=======
+
 .formulario input:nth-child(4) {
   margin-top: 5px;
+  /*espaçamento entre as areas para serem preenchidas(entre o campo de escreve e digite seu peso)*/
 }
 
 .formulario input:nth-child(2) {
   margin-top: 5px;
+  /*espaçamento entre as areas para serem preenchidas (entre o campo de escreve e digite sua altura)*/
 }
 
 .dois {
   display: flex;
->>>>>>> 9f13f0debbcdab65c8a1918d9c9e1ca9af96505c
+  /*coloca o titulo do lado da imagem*/
 }
 
 .dois img {
@@ -124,70 +154,12 @@
 
 .dois h3 {
   margin-top: 15px;
+  /*ajuste vertical titulo*/
 }
 
-/* Eu não olhei muito daqui pra baixo, preferi criar o stylesheet e você olha as diferenças pra ver.
+/*  preferi criar o stylesheet 
  * Se serve de dica prefira utilizar 'classes' ao inves de 'ids' pra caso de precisar repetir o nome.
  */
-
-header {
-  display: flex;
-  border: #f0f2f2;
-  background-color: #f0f2f2;
-}
-
-header img {
-  width: 130px;
-  height: 130px;
-}
-
-header h1 {
-  color: black;
-  font-weight: 700;
-}
-
-header p {
-  color: #398f76;
-  font-weight: 400;
-  font-style: italic;
-}
-
-main #dados #texto {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
-}
-
-main input {
-  background-color: #f0f0f5;
-  /*cor dentro do input*/
-  border: 0;
-  /*tira a borda do input*/
-  padding: 5px 5px;
-  /*aumenta a caixa do input*/
-  font-size: 16px;
-  /*aumenta o texto dentro do input*/
-
-  outline: none;
-  /*efeito visual*/
-}
-/*
-.coluna {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-}
-
-.coluna li {
-  list-style: none;
-}
-
-.coluna li img {
-  width: 50px;
-  height: 50px;
-}
-
-*/
 
 #resultado {
   transition: border-radius 0.5s;
