@@ -129,19 +129,25 @@
   font-weight: 700;
   /*negrito*/
   margin-top: 25px;
+  margin-left: 40px;
+  /*ajuste do bloco para ficae "depois" da linha da imagem*/
   padding: 10px 25px;
   /*grossura do botão*/
   transition: filter 0.5s;
   /*efeito ao colocar o mouse em cima*/
+  
 }
 
 .um button:hover {
   filter: brightness(0.7);
   /*efeito cor mudando ao colocar o mouse em cima*/
+  
 }
 
 .formulario {
   display: grid;
+  margin-left: 40px;
+  /*ajuste do bloco para ficae "depois" da linha da imagem*/
   /*colocar digite sua altura e digite seu peso um em baixo do outro*/
 }
 
@@ -183,6 +189,8 @@
 
  .resposta{
    display: grid;
+   margin-left: 40px;
+  /*ajuste do bloco para ficae "depois" da linha da imagem*/
  }
 
 #resultado {
@@ -192,6 +200,6 @@
 .dois .resposta h4{
   margin-top: 15px;
   /*ajuste vertical */
-  font-weight: 800;
+  font-weight: 500;
   /*negrito da fonte*/
 }
