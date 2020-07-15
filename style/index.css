@@ -65,6 +65,7 @@
 
 .conteudo input {
   background-color: #f0f0f5;
+  color: #000;
   /*cor dentro do input*/
   border: 0;
   /*tira a borda do input*/
